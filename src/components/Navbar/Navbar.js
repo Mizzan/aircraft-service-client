@@ -6,6 +6,7 @@ const Navbar = () => {
   const navItemStyle = {
     textDecoration: 'none',
     color: 'white',
+    margin: '0 5px',
   };
   const items = useCart();
 
@@ -21,6 +22,9 @@ const Navbar = () => {
             </Link>
             <Link to="/bookings" style={navItemStyle} className="nav-item">
               Bookings[{items.length}]
+            </Link>
+            <Link to="/login" style={navItemStyle} className="nav-item">
+              Login
             </Link>
           </ul>
         </div>
